@@ -31,8 +31,9 @@ def home():
 <div class="message">
 {}
 </div>
-""".format(m.content)
-
+""".format(m.content.replace("<", "&lt;").replace(">", "&gt;"))
+    # replacement = {"<": "&lt;", ">": "&gt;"}
+    # body = "\n".join([replacement.get(c, c) for c in body])
     return body 
 
 
