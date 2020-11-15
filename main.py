@@ -32,8 +32,6 @@ def home():
 {}
 </div>
 """.format(m.content.replace("<", "&lt;").replace(">", "&gt;"))
-    # replacement = {"<": "&lt;", ">": "&gt;"}
-    # body = "\n".join([replacement.get(c, c) for c in body])
     return body 
 
 
